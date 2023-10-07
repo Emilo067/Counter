@@ -1,4 +1,5 @@
 import React, {FC} from 'react';
+import S from './Button.module.css'
 
 type ButtonPropsType = {
     name: string,
@@ -15,7 +16,7 @@ const Button: FC<ButtonPropsType> = (props) => {
     return (
         <button
             disabled={disabled}
-            className={className}
+            className={`${S.Button} ${className}`}
             onClick={onCLick}
         >
             {name}

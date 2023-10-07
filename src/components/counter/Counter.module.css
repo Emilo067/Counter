@@ -45,20 +45,6 @@
     padding: 0 10px;
 }
 
-.Button {
-    width: 500px;
-    height: 50px;
-    color: black;
-    font-size: 40px;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #61dafb;
-    outline: none;
-    border-radius: 15px;
-}
-
 .ButtonDisabled {
     opacity: 0.5;
     /*pointer-events: none;*/
