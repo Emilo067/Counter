@@ -23,7 +23,6 @@ export const TabloSettings: FC<TabloSettingsPropsType> = (props) => {
             setDisableBtn,
             setShowInputText,
             setError,
-            error
         } = props
 
     const onChangeStartValueHandler = (e: ChangeEvent<HTMLInputElement>) => {
@@ -62,7 +61,7 @@ export const TabloSettings: FC<TabloSettingsPropsType> = (props) => {
 
             <div className={"InputWrapper"}>
                 <label htmlFor={"startValue"}>start value:</label>
-                <input className={error ? `${S.InputError}` : ''} value={startValue} type="number" id={"startValue"} onChange={onChangeStartValueHandler}/>
+                <input value={startValue} type="number" id={"startValue"} onChange={onChangeStartValueHandler}/>
             </div>
 
         </div>
