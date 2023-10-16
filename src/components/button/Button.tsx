@@ -6,11 +6,18 @@ type ButtonPropsType = {
     onCLick: () => void,
     className?: string,
     disabled?: boolean
+
 }
 
 const Button: FC<ButtonPropsType> = (props) => {
 
-    const {name, onCLick, className, disabled} = props;
+    const
+        {
+            name,
+            onCLick,
+            className,
+            disabled
+        } = props;
 
 
     return (
