@@ -1,6 +1,5 @@
 import React, {ChangeEvent, FC} from 'react';
 import S from "./TabloSettings.module.css";
-import {maxValue} from "../../../../App";
 
 type TabloSettingsPropsType = {
     startValue: number,
@@ -27,7 +26,7 @@ export const TabloSettings: FC<TabloSettingsPropsType> = (props) => {
 
     const onChangeStartValueHandler = (e: ChangeEvent<HTMLInputElement>) => {
         setStartValue(+e.currentTarget.value)
-        if (+e.currentTarget.value < 0 || +e.currentTarget.value >= maxValue) {
+        if (+e.currentTarget.value < 0 || +e.currentTarget.value >= maxNumber) {
             setError(true)
             setDisableBtn(true)
         } else {

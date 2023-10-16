@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {FC} from 'react';
 import Button from "../button/Button";
 import S from "./SettingsCounter.module.css"
 import {TabloSettings} from "../counter/tablo/tabloSettings/TabloSettings";
@@ -38,10 +38,10 @@ export const SettingsCounter: FC<SettingsPropsType> = (props) => {
         } = props
     const setSettingNumber = () => {
 
-        if(startValue < 0) {
-            setError(true);
-            setDisableBtn(true)
-        }
+        // if(startValue < 0) {
+        //     setError(true);
+        //     setDisableBtn(true)
+        // }
 
         setNumber(startValue)
 
